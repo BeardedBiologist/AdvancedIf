@@ -5,6 +5,9 @@ string? firstName = Console.ReadLine();
 Console.Write("What is your last name?: ");
 string? lastName = Console.ReadLine();
 
+Console.Write("What is your age?: ");
+string? ageString = Console.ReadLine();
+
 if (firstName.ToLower() == "josh" && lastName.ToLower() == "o'connor")
 {
     Console.WriteLine("Hello Mr. O'Connor");
@@ -20,4 +23,15 @@ else if (firstName.ToLower() == "josh")
 else
 {
     Console.WriteLine("Sorry you dont have a cooler name! :P");
+}
+
+int age = int.Parse(ageString);
+
+if (age != 34)
+{
+    Console.WriteLine("Sorry, you aren't a great age");
+}
+else
+{
+    Console.WriteLine("You're a great age");
 }
